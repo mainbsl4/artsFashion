@@ -1,0 +1,105 @@
+
+
+ .main-carousel-body{
+  width: 100%;
+  height: 90vh;
+}
+.carousel-body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel-item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel-item img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.C-animation-body1, .C-animation-body2, .C-animation-body3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.C-animation-body1 .C-animation1of1, .C-animation-body2 .C-animation2of1, .C-animation-body3 .C-animation3of1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(to right, hsla(221, 17%, 22%, 0.200) 50%,  hsla(221, 17%, 22%, 0.200) 50%);  
+}
+
+
+.C-animation-body1 .C-animation1of2{
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  width: 180px;
+  height: 18px;
+  /* height: 150px; */
+  border-radius: 50%;
+  border: 4px solid #2f3542;
+  animation-name: C-animation1of2;
+  /* animation-direction: initial; */
+  /* animation-iteration-count: infinite; */
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  background-color: rgb(196, 195, 195);
+}
+
+@keyframes C-animation1of2{
+  0%{
+    transform: rotateY(100deg);
+    box-shadow: 0px 4px 10px #57606f,inset 3.5px 3.5px 10px #57606f;
+  }
+
+  25%{
+    box-shadow: 0px 10px 10px #57606f,inset 3.5px 3.5px 10px #57606f;
+
+  }
+  50%{
+    box-shadow: 0px 15px 10px #57606f,inset 3.5px 3.5px 10px #57606f;
+  }
+  75%{
+    box-shadow: 0px 20px 10px #57606f,inset 3.5px 3.5px 10px #57606f;
+  }
+  100%{
+    transform: rotateY(180deg);
+    box-shadow: 0px 25px 10px #57606f,inset 3.5px 3.5px 10px #57606f;
+  }
+}
+
+.C-animation-body1 .C-animation1of2::before{
+  content: 'JACKETS';
+  display: flex;
+  justify-content: center;
+  transform: rotateY(180deg);
+  animation-name: C-animation1of2Font;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes C-animation1of2Font{
+  0%{
+    font-size: 0px;
+  }
+  100%{
+    font-size: 25px;
+    margin-top: -40px;
+  }
+}
+
+
+
